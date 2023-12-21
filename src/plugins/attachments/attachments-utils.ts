@@ -45,7 +45,7 @@ export async function fillWriteDataForAttachmentsChange<RxDocType>(
             !originalDocument._attachments
         )
     ) {
-        throw new Error('_attachments missing');
+        throw new Error('_attachments missing - tycho edit');
     }
 
     const docId: string = (newDocument as any)[primaryPath];
