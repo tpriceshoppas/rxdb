@@ -195,7 +195,7 @@ export function createRxSchema<T>(
     if (runPreCreateHooks) {
         runPluginHooks('preCreateRxSchema', jsonSchema);
     }
-
+    console.log('schema created!!!!', );
     let useJsonSchema = fillWithDefaultSettings(jsonSchema);
     useJsonSchema = normalizeRxJsonSchema(useJsonSchema);
     overwritable.deepFreezeWhenDevMode(useJsonSchema);
